@@ -1,1 +1,3 @@
-import './styles.css';
+import './js/modal';
+
+import './styles.scss';
