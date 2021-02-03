@@ -16,12 +16,10 @@ function handleTheme(event) {
     refs.body.classList.replace(`${currentTheme}`, 'dark-theme');
     localStorage.setItem('theme', 'dark-theme');
     refs.changeTheme.setAttribute('checked', 'true');
-    console.log(localStorage);
   } else {
     refs.body.classList.replace(`${currentTheme}`, 'light-theme');
     localStorage.setItem('theme', 'light-theme');
     refs.changeTheme.setAttribute('checked', 'false');
-    console.log(localStorage);
   }
 }
 
