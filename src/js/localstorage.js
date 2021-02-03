@@ -15,11 +15,11 @@ function handleTheme(event) {
   if (currentTheme === 'light-theme') {
     refs.body.classList.replace(`${currentTheme}`, 'dark-theme');
     localStorage.setItem('theme', 'dark-theme');
-    refs.changeTheme.setAttribute('checked', 'true');
+    refs.changeTheme.setAttribute('checked', 'false');
   } else {
     refs.body.classList.replace(`${currentTheme}`, 'light-theme');
     localStorage.setItem('theme', 'light-theme');
-    refs.changeTheme.setAttribute('checked', 'false');
+    refs.changeTheme.setAttribute('checked', 'true');
   }
 }
 
