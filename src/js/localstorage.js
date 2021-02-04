@@ -7,6 +7,10 @@ refs.changeTheme.addEventListener('change', handleTheme);
 
 refs.body.classList.add(localStorage.getItem('theme'));
 
+if (localStorage.getItem('theme') === 'dark-theme') {
+  refs.changeTheme.setAttribute('checked', 'true');
+}
+
 function handleTheme(event) {
   event.preventDefault();
 
@@ -24,6 +28,21 @@ function handleTheme(event) {
 }
 
 //Вариант 2
+
+// function toLight() {
+//   refs.body.classList.replace(`${localStorage.getItem('theme')}`, 'dark-theme');
+//   localStorage.setItem('theme', 'dark-theme');
+//   refs.changeTheme.setAttribute('checked', 'false');
+// }
+
+// function toDark() {
+//   refs.body.classList.replace(
+//     `${localStorage.getItem('theme')}`,
+//     'light-theme',
+//   );
+//   localStorage.setItem('theme', 'light-theme');
+//   refs.changeTheme.setAttribute('checked', 'true');
+// }
 
 // const Theme = {
 //   LIGHT: 'light-theme',
