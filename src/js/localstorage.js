@@ -14,7 +14,7 @@ if (localStorage.getItem('theme') === 'dark-theme') {
 function handleTheme(event) {
   event.preventDefault();
 
-  const currentTheme = localStorage.getItem('theme');
+  const currentTheme = localStorage.getItem('theme') || 'light-theme';
 
   if (currentTheme === 'light-theme') {
     refs.body.classList.replace(`${currentTheme}`, 'dark-theme');
